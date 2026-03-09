@@ -1,0 +1,71 @@
+{
+  "supplier": "Henderson Office Supplies Ltd",
+  "vat_number": "GB 987 654 321",
+  "receipt_date": "2026-03-07",
+  "line_items": [
+    {
+      "description": "Printer cartridges x3",
+      "net": 45.0,
+      "vat_rate": "20%",
+      "vat": 9.0,
+      "gross": 54.0,
+      "note": null
+    },
+    {
+      "description": "Desk lamp",
+      "net": 22.0,
+      "vat_rate": "20%",
+      "vat": 4.4,
+      "gross": 26.4,
+      "note": null
+    },
+    {
+      "description": "Sparkling water (office)",
+      "net": 3.2,
+      "vat_rate": "0%",
+      "vat": 0.0,
+      "gross": 3.2,
+      "note": "Zero-rated food/drink. Reclaim risk: food and drink consumed on premises may not qualify as reclaimable input tax."
+    },
+    {
+      "description": "Notebook A5 x10",
+      "net": 18.0,
+      "vat_rate": "20%",
+      "vat": 3.6,
+      "gross": 21.6,
+      "note": "Blank notebooks are stationery, not books \u2014 standard-rated at 20%."
+    },
+    {
+      "description": "HDMI cable",
+      "net": 9.99,
+      "vat_rate": "20%",
+      "vat": 2.0,
+      "gross": 11.99,
+      "note": "VAT calculated as \u00a31.998, rounded to \u00a32.00."
+    }
+  ],
+  "totals": {
+    "net": 98.19,
+    "vat": 19.0,
+    "gross": 117.19
+  },
+  "flags": [
+    {
+      "severity": "ok",
+      "message": "VAT number GB 987 654 321 is present and matches the required GB + 9-digit format."
+    },
+    {
+      "severity": "ok",
+      "message": "VAT arithmetic verified: standard-rated net \u00a394.99 \u00d7 20% = \u00a318.998, rounds to \u00a319.00. Within \u00b1\u00a30.02 rounding tolerance."
+    },
+    {
+      "severity": "ok",
+      "message": "Mixed-rate receipt handled correctly: sparkling water correctly zero-rated; all other items correctly standard-rated."
+    },
+    {
+      "severity": "warning",
+      "message": "Reclaim risk: 'Sparkling water (office)' is food and drink. Input VAT reclaim may be disallowed if treated as staff refreshments or entertainment. Accountant to confirm business purpose."
+    }
+  ],
+  "status": "approved"
+}

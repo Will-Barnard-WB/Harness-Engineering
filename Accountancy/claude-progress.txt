@@ -1,0 +1,5 @@
+2026-03-09 — Analysed receipts/receipt-001.txt (Henderson Office Supplies Ltd, 07/03/2026, £117.19 gross).
+  Result: 1 warning (sparkling water reclaim risk), all arithmetic and VAT number checks passed.
+  Outputs: ledger/2026-03-07_henderson-office-supplies.json, ledger/2026-03-07_henderson-office-supplies.md
+  Status: pending_approval — accountant to confirm water is not staff entertainment before filing.
+  Re-verified 2026-03-09: JSON validity confirmed via cat; all outputs present and correct.
